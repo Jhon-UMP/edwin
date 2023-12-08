@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  #titulo{
+    color: greenyellow;
+  }
+  
+  header {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    padding: 1em;
+    text-align: center;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .producto {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #carrito {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+  }
+  
+  #lista-carrito {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .carrito-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #333;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .producto {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    width: calc(33.33% - 20px); /* Aproximadamente el 33.33% del ancho con 20px de espacio entre elementos */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    margin-bottom: 20px;
+  }
+
+  .producto img {
+    width: 100%; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+    max-height: 200px; /* Establece una altura máxima para las imágenes, ajusta según sea necesario */
+    object-fit: cover; /* Ajusta el comportamiento de cómo la imagen cubre el contenedor */
+  }
